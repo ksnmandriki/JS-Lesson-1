@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let admin, name;
+        name = "Виталий Валентинович";
+        document.write("Начальное значение переменной admin: " + admin + "<br/>");
+        document.write("Начальное значение переменной name: " + name + "<br/>");
+        admin = name;
+        document.write("Значение переменной admin: " + admin + "<br/>");
+        document.write("Значение переменной name: " + name + "<br/>");
+        alert(admin);
+
+        function myName(){
+            let admin = "Сергей Кузнецов";
+            document.getElementById("demo-admin").innerHTML = admin;
+            document.getElementById("demo-name").innerHTML = name;
+        }
+    </script>
+
+    <p>Меняем admin на свое</p>
+    <button onclick="myName()">Нажми меня, please!</button>
+    <p>Значение переменной admin: <span id="demo-admin"></span></p>
+    <p>Значение переменной name: <span id="demo-name"></span></p>
+</body>
+</html>

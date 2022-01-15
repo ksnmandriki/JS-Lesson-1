@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const name1 = prompt('Введите сюда свое имя');
+        document.write( name1 + ". Очень рады знакомству с Вами!!! <br>");
+        let age = prompt('Сколько Вам лет, если не секрет? ', 39);
+        let summ = 10 + parseInt(age);
+        document.write("Через 10 лет Вам исполнится " + summ + " лет!");
+        if (summ){
+            setTimeout(function(){ 
+                        const result = confirm('Начать заново?');
+                        if (result) 
+                            window.location.reload();
+                        else
+                            window.close();
+                        
+            },1900);
+        }else{
+            const result = confirm('Вы не ввели возраст. Начать заново?');
+            if (result) 
+                window.location.reload();
+            else
+                window.close();  
+        }
+
+    </script>
+</body>
+</html>

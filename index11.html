@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let i = 1;
+        let a = ++i;
+        alert("это ++i = " + a);
+
+        i = 1;
+        a = i++;
+        alert("это i++ =" + a);
+
+        a = 1;
+        let b = 1, c, d;
+        c = ++a;
+        alert("это ++a = " + c);
+        d = b++;
+        alert("это b++ = " + d);
+        c = (2+ ++a);
+        alert("это 2+ ++a = " + c);
+        d = (2+ b++);
+        alert("это 2+ b++ = " + b);
+    </script>
+</body>
+</html>
